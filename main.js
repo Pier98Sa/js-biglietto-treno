@@ -67,13 +67,13 @@ if (eta <= 17) {
     // calcolo costo del biglietto
     let prezzoBiglietto = km * prezzoKm * sconto20;
     //stampo il risultato
-    document.getElementById('sconto').innerHTML = "hai diritto ad uno sconto del 20%"
+    document.getElementById('sconto').innerHTML = "Hai diritto ad uno sconto del 20%"
     document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + (prezzoBiglietto.toFixed(2)) + "\u20AC";
 }else if (eta >= 65){
     // calcolo costo del biglietto
     let prezzoBiglietto = km * prezzoKm * sconto40;
     //stampo il risultato
-    document.getElementById('sconto').innerHTML = "hai diritto ad uno sconto del 40%"
+    document.getElementById('sconto').innerHTML = "Hai diritto ad uno sconto del 40%"
     document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + (prezzoBiglietto.toFixed(2)) + "\u20AC";
 
 
