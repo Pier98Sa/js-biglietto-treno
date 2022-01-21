@@ -33,7 +33,7 @@ if (eta <= 17) {
 */
 
 // esercizio che controlla che il dato d'ingresso sia un numero
-let eta = prompt("inserisci la tua età")
+let eta = prompt("inserisci la tua età");
 
 //struttura di controllo con if che è valida solo una volta
 /*if (isNaN(eta)){
@@ -45,10 +45,10 @@ let eta = prompt("inserisci la tua età")
 //struttura di controllo con while che è valida all'infinito
 while (isNaN(eta)){
     alert("Il valore inserito non è numerico");
-    eta = parseInt(prompt("Inserisci la tua età"));
+    eta = prompt("Inserisci la tua età");
 }
 
-let km = parseInt(prompt("Inserisci il numero di chilometri del viaggio"))
+let km = prompt("Inserisci il numero di chilometri del viaggio");
 //struttura di controllo con if che è valida solo una volta
 /*
 if (isNaN(eta)){
@@ -60,7 +60,7 @@ if (isNaN(eta)){
 // struttura della sezione di condizione
 while (isNaN(km)){
     alert("Il valore inserito non è numerico");
-    km = parseInt(prompt("Inserisci il numero di chilometri del viaggio"));
+    km = prompt("Inserisci il numero di chilometri del viaggio");
 }
 
 if (eta <= 17) {
