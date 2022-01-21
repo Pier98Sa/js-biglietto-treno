@@ -63,15 +63,17 @@ while (isNaN(km)){
     km = prompt("Inserisci il numero di chilometri del viaggio");
 }
 
+let prezzoBiglietto;
+
 if (eta <= 17) {
     // calcolo costo del biglietto
-    let prezzoBiglietto = km * prezzoKm * sconto20;
+    prezzoBiglietto = km * prezzoKm * sconto20;
     //stampo il risultato
     document.getElementById('sconto').innerHTML = "Hai diritto ad uno sconto del 20%"
     document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + (prezzoBiglietto.toFixed(2)) + "\u20AC";
 }else if (eta >= 65){
     // calcolo costo del biglietto
-    let prezzoBiglietto = km * prezzoKm * sconto40;
+    prezzoBiglietto = km * prezzoKm * sconto40;
     //stampo il risultato
     document.getElementById('sconto').innerHTML = "Hai diritto ad uno sconto del 40%"
     document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + (prezzoBiglietto.toFixed(2)) + "\u20AC";
@@ -79,7 +81,7 @@ if (eta <= 17) {
 
 }else{
     // calcolo costo del biglietto
-    let prezzoBiglietto = km * prezzoKm ;
+    prezzoBiglietto = km * prezzoKm ;
     //stampo il risultato
     document.getElementById('prezzo').innerHTML = "Il prezzo del biglietto è: " + (prezzoBiglietto.toFixed(2)) + "\u20AC";
 
